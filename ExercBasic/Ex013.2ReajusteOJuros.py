@@ -1,0 +1,5 @@
+dinheiro = float(input('Qual o Valor do produto? R$'))
+alm = dinheiro + (dinheiro * 0.08)
+des = dinheiro - (dinheiro * 0.15)
+print('O seu produto tem o valor de R${:.2f}, no proço a vista, ele vai sair por R${:.2f}' .format(dinheiro, des))
+print('E seu valor a prazo ira sair por R${:.2f}' .format(alm))
