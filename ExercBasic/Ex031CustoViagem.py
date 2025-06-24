@@ -1,7 +1,6 @@
-km = int(input('Qual é a distancia da sua viagem? '))
+km = float(input('Qual é a distancia da sua viagem? '))
+print('Você esta prestes a começar uma viagem de {:.0f}km' .format(km))
 if km <= 200:
-    print('Você esta prestes a começar uma viagem de {}km' .format(km))
-    print('E o preço da sua passagem será de R${}' .format(km * 0,50))
+    print('E o preço da sua passagem será de R${:.2f}' .format(km * 0.50))
 else:
-    print('Você esta prestes a começar uma viagem de {}km'.format(km))
-    print('E o preço da sua passagem será de R${}' .format(km * 0,45))
+    print('E o preço da sua passagem será de R${:.2f}' .format(km * 0.45))
