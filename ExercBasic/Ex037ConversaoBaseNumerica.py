@@ -10,10 +10,10 @@ octal = oct(num)
 hexadecimal = hex(num)
 
 if opcao == 1:
-    print('{} convertido para Binario é igual a {}' .format(num, binario))
+    print('{} convertido para Binario é igual a {}' .format(num, binario [2:]))
 elif opcao == 2:
-    print('{} convertido para Octal é igual a {}' .format(num, octal))
+    print('{} convertido para Octal é igual a {}' .format(num, octal [2:]))
 elif opcao == 3:
-    print('{} convertido para Hexadecimal é igual a {}' .format(num, hexadecimal))
+    print('{} convertido para Hexadecimal é igual a {}' .format(num, hexadecimal [2:]))
 else:
-    print('A Opção digitada esta incorreta.')
+    print('A Opção digitada esta incorreta, Tente novamente..')
