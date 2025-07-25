@@ -47,4 +47,4 @@ elif computador == 2:
     elif jogada == 2:
         print('EMPATE')
     else:
-        print('JOGADA INVALIDA')
+        print('JOGADA INVALIDA') 
