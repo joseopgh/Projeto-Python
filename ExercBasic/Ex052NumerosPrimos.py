@@ -1,9 +1,14 @@
 num = int(input('Digite um número: '))
-if num > 1:
-    for c in range(2, int(num **  0.5) + 1):
-        if num %  == 0:
-            print(c, end=' ')
-        else:
-            print('Não é primo')
+tot = 0
+for c in range(1, num + 1):
+    if num % c == 0:
+        print('\033[36m', end='')
+        tot += 1
+    else:
+        print('\033[31m', end='')
+    print('{} '.format(c), end='')
+print('\n\033[mO numero {} foi divisivel {} vezes'.format(num, tot))
+if tot == 2:
+    print('E por isso ele é primo')
 else:
-    print('O numero digitado não é primo pois é menos que 1')
+    print('E por isso ele não é primo')
