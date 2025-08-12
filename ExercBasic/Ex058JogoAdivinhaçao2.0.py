@@ -8,13 +8,12 @@ valor = int(input('Qual é seu palpite? '))
 
 if valor > 0 and valor < 10:
     while valor != comput:
+        tentativa += 1
         if comput > valor:
             valor = int(input('MAIS... Tente novamente: '))
         if comput < valor:
             valor = int(input('MENOS... Tente novamente: '))
-        if valor > comput and valor < comput:
-            tentativa += 1
         if valor == comput:
-            print('VOÇÊ ACERTOU MISERAVEL! Na {} Tentativa.'.format(tentativa))
+            print('VOÇÊ ACERTOU MISERAVEL! Na {} Tentativa.'.format(tentativa + 1))
 else:
     print('Valor incorreto! Voçê não sabe brincar!!')
