@@ -1,0 +1,6 @@
+valorA = int(input(''))
+valorB = int(input(''))
+valorC = int(input(''))
+valorD = int(input(''))
+calculo = (valorA * valorB) - (valorC * valorD)
+print('DIFERENCA = {}' .format(calculo))
